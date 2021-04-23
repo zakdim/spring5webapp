@@ -54,3 +54,20 @@ Got a question about your Spring Framework 5 course? [Checkout these FAQs!](http
 * Like Spring Framework Guru on [Facebook](https://www.facebook.com/springframeworkguru/)
 * Follow Spring Framework Guru on [Twitter](https://twitter.com/spring_guru)
 * Connect with John Thompson on [LinkedIn](http://www.linkedin.com/in/springguru)
+
+## S02-19 H2 Database Console
+
+* Navigate to `http://localhost:8080/h2-console/`
+* Add property to `application.properties` file:
+
+```
+# H2 configuration
+spring.h2.console.enabled=true
+spring.datasource.url=jdbc:h2:mem:testdb
+```
+
+* Start spring boot application and check the log:
+
+```
+H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+```
